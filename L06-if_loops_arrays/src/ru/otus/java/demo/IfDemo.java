@@ -11,7 +11,17 @@ public class IfDemo {
         }
 
         // if else
-        if (n > 300) {
+        var result = n > 300;
+        //  "== true" можно опускать
+        // вместо (result == true) просто (result)
+        // вместо (result == false) просто (!result)
+        if (result == true) {
+            System.out.println("Больше 300");
+        } else {
+            System.out.println("Меньше 300");
+        }
+
+        if (result) {
             System.out.println("Больше 300");
         } else {
             System.out.println("Меньше 300");
