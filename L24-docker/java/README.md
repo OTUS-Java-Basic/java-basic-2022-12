@@ -12,10 +12,6 @@ docker images
 ```bash
 docker run java-hello-docker:demo
 ```
-Запуск в интерактивном режиме 
-```bash
-docker run -it ubuntu bash
-```
 
 Остановить и удалить все Docker контейнеры.
 ```bash
