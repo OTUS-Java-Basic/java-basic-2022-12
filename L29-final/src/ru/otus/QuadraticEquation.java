@@ -11,7 +11,8 @@ public class QuadraticEquation {
 
         double discriminant = b * b - 4 * a * c;
         if (discriminant < 0) {
-            throw new IllegalArgumentException("Discriminant can't be less then 0, discriminant:" + discriminant);
+            throw new IllegalArgumentException(
+                    "Discriminant can't be less then 0, discriminant:" + discriminant);
         }
 
         double x1 = (-b + Math.sqrt(discriminant)) / (2 * a);

@@ -46,6 +46,11 @@ public class QuadraticEquationTest {
         if (check2 != 0) {
             throw new AssertionError("wrong result");
         }
+
+        boolean check3 = roots.getX1() == roots.getX2();
+        if (!check3) {
+            throw new AssertionError("x1 must be equal to x2");
+        }
     }
 
     public static void caseNegativeDiscriminant() {
